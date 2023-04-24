@@ -45,7 +45,7 @@ This project can be run from Intellij or in terminal:
 * One choice of the path of source directory is ```Grammar``` under the project root directory which contains several valid and invalid grammar files for testing purposes.
 
 ## Description of Key Classes and Methods
-1. [SentenceGeneratorApp.java](src%2Fmain%2Fjava%2Fgenerator%2Fproblem1%2FSentenceGeneratorApp.java)
+1. [SentenceGeneratorApp.java](SentenceGenerator/src%2Fmain%2Fjava%2Fgenerator%2Fproblem1%2FSentenceGeneratorApp.java)
    
    The launcher of Sentence Generator App which can handle the input argument with help of validateArgument method.
    1. validateArgument() method: Check the input argument is a valid folder path
@@ -54,7 +54,7 @@ This project can be run from Intellij or in terminal:
    2. main() method: The main method to launch the Sentence Generator App.
    
 
-2. [InputProcessor.java](src%2Fmain%2Fjava%2Fgenerator%2Fproblem1%2FInputProcessor.java)
+2. [InputProcessor.java](SentenceGenerator/src%2Fmain%2Fjava%2Fgenerator%2Fproblem1%2FInputProcessor.java)
 
    This class aims to read user's option and generate sentences based on user's option.
    1. populateOptions() method: Read file information from input directory, and store them in the grammarTitles and filePaths fields
@@ -63,7 +63,7 @@ This project can be run from Intellij or in terminal:
    3. repeatCurrentGrammar() method: Ask user to re-generate a sentence from the previous chosen grammar file.
    
 
-3. [SentenceGenerator.java](src%2Fmain%2Fjava%2Fgenerator%2Fproblem1%2FSentenceGenerator.java)
+3. [SentenceGenerator.java](SentenceGenerator/src%2Fmain%2Fjava%2Fgenerator%2Fproblem1%2FSentenceGenerator.java)
 
    The sentence generator which helps to generate sentence from the given grammar.
    1. generateSentence(String input) method: Generates a sentence from the given input. This method will match the non-terminals recursively until there is no non-terminals in sentence.
@@ -74,7 +74,7 @@ This project can be run from Intellij or in terminal:
       * return: formatted sentence
    
 
-4. [JsonReader.java](src%2Fmain%2Fjava%2Fgenerator%2Fproblem1%2FJsonReader.java)
+4. [JsonReader.java](SentenceGenerator/src%2Fmain%2Fjava%2Fgenerator%2Fproblem1%2FJsonReader.java)
 
    The json reader which helps to read a json file.
    1. JsonReader(String filePath) method: the constructor to parse the grammar file into a json object
